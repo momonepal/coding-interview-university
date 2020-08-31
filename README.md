@@ -20,6 +20,7 @@
 - [Español](translations/README-es.md)
 - [Português Brasileiro](translations/README-ptbr.md)
 - [Polish](translations/README-pl.md)
+- [繁體中文](translations/README-tw.md)
 
 </details>
 
@@ -200,8 +201,13 @@ I'm using Github's special markdown flavor, including tasks lists to check progr
 
 **Create a new branch so you can check items like this, just put an x in the brackets: [x]**
 
-
     Fork a branch and follow the commands below
+
+Fork the GitHub repo https://github.com/jwasham/coding-interview-university by clicking on the Fork button
+
+    Clone to your local repo
+
+`git clone git@github.com:<your_github_username>/coding-interview-university.git`
 
 `git checkout -b progress`
 
@@ -216,6 +222,8 @@ I'm using Github's special markdown flavor, including tasks lists to check progr
 `git commit -m "Marked x"`
 
 `git rebase jwasham/master`
+
+`git push --set-upstream origin progress`
 
 `git push --force`
 
@@ -476,7 +484,7 @@ Write code on a whiteboard or paper, not a computer. Test with some sample input
 - [ ] [Big O Notation (and Omega and Theta) - best mathematical explanation (video)](https://www.youtube.com/watch?v=ei-A_wy5Yxw&index=2&list=PL1BaGV1cIH4UhkL8a9bJGG356covJ76qN)
 - [ ] Skiena:
     - [video](https://www.youtube.com/watch?v=gSyDMtdPNpU&index=2&list=PLOtl7M3yp-DV69F32zdK7YJcNXpTunF2b)
-    - [slides](http://www3.cs.stonybrook.edu/~algorith/video-lectures/2007/lecture2.pdf)
+    - [slides](https://archive.org/details/lecture2_202008)
 - [ ] [A Gentle Introduction to Algorithm Complexity Analysis](http://discrete.gr/complexity/)
 - [ ] [Orders of Growth (video)](https://www.coursera.org/lecture/algorithmic-thinking-1/orders-of-growth-6PKkX)
 - [ ] [Asymptotics (video)](https://www.coursera.org/lecture/algorithmic-thinking-1/asymptotics-bXAtM)
@@ -494,11 +502,11 @@ Write code on a whiteboard or paper, not a computer. Test with some sample input
 - ### Arrays
     - Implement an automatically resizing vector.
     - [ ] Description:
-        - [Arrays (video)](https://www.coursera.org/learn/data-structures/lecture/OsBSF/arrays)
+        - [Arrays (video)](https://www.coursera.org/lecture/data-structures/arrays-OsBSF)
         - [UC Berkeley CS61B - Linear and Multi-Dim Arrays (video)](https://archive.org/details/ucberkeley_webcast_Wp8oiO_CZZE) (Start watching from 15m 32s)
         - [Basic Arrays (video)](https://archive.org/details/0102WhatYouShouldKnow/02_04-basicArrays.mp4)
         - [Multi-dim (video)](https://archive.org/details/0102WhatYouShouldKnow/02_05-multidimensionalArrays.mp4)
-        - [Dynamic Arrays (video)](https://www.coursera.org/learn/data-structures/lecture/EwbnV/dynamic-arrays)
+        - [Dynamic Arrays (video)](https://www.coursera.org/lecture/data-structures/dynamic-arrays-EwbnV)
         - [Jagged Arrays (video)](https://www.youtube.com/watch?v=1jtrQqYpt7g)
         - [Jagged Arrays (video)](https://archive.org/details/0102WhatYouShouldKnow/02_06-jaggedArrays.mp4)
         - [Resizing arrays (video)](https://archive.org/details/0102WhatYouShouldKnow/03_01-resizableArrays.mp4)
@@ -530,14 +538,14 @@ Write code on a whiteboard or paper, not a computer. Test with some sample input
 
 - ### Linked Lists
     - [ ] Description:
-        - [ ] [Singly Linked Lists (video)](https://www.coursera.org/learn/data-structures/lecture/kHhgK/singly-linked-lists)
+        - [ ] [Singly Linked Lists (video)](https://www.coursera.org/lecture/data-structures/singly-linked-lists-kHhgK)
         - [ ] [CS 61B - Linked Lists 1 (video)](https://archive.org/details/ucberkeley_webcast_htzJdKoEmO0)
         - [ ] [CS 61B - Linked Lists 2 (video)](https://archive.org/details/ucberkeley_webcast_-c4I3gFYe3w)
     - [ ] [C Code (video)](https://www.youtube.com/watch?v=QN6FPiD0Gzo)
             - not the whole video, just portions about Node struct and memory allocation.
     - [ ] Linked List vs Arrays:
-        - [Core Linked Lists Vs Arrays (video)](https://www.coursera.org/learn/data-structures-optimizing-performance/lecture/rjBs9/core-linked-lists-vs-arrays)
-        - [In The Real World Linked Lists Vs Arrays (video)](https://www.coursera.org/learn/data-structures-optimizing-performance/lecture/QUaUd/in-the-real-world-lists-vs-arrays)
+        - [Core Linked Lists Vs Arrays (video)](https://www.coursera.org/lecture/data-structures-optimizing-performance/core-linked-lists-vs-arrays-rjBs9)
+        - [In The Real World Linked Lists Vs Arrays (video)](https://www.coursera.org/lecture/data-structures-optimizing-performance/in-the-real-world-lists-vs-arrays-QUaUd)
     - [ ] [why you should avoid linked lists (video)](https://www.youtube.com/watch?v=YQs6IC-vgmo)
     - [ ] Gotcha: you need pointer to pointer knowledge:
         (for when you pass a pointer to a function that may change the address where that pointer points)
@@ -559,11 +567,11 @@ Write code on a whiteboard or paper, not a computer. Test with some sample input
         - [ ] reverse() - reverses the list
         - [ ] remove_value(value) - removes the first item in the list with this value
     - [ ] Doubly-linked List
-        - [Description (video)](https://www.coursera.org/learn/data-structures/lecture/jpGKD/doubly-linked-lists)
+        - [Description (video)](https://www.coursera.org/lecture/data-structures/doubly-linked-lists-jpGKD)
         - No need to implement
 
 - ### Stack
-    - [ ] [Stacks (video)](https://www.coursera.org/learn/data-structures/lecture/UdKzQ/stacks)
+    - [ ] [Stacks (video)](https://www.coursera.org/lecture/data-structures/stacks-UdKzQ)
     - [ ] [Using Stacks Last-In First-Out (video)](https://archive.org/details/0102WhatYouShouldKnow/05_01-usingStacksForLast-inFirst-out.mp4)
     - [ ] Will not implement. Implementing with array is trivial.
 
@@ -602,12 +610,12 @@ Write code on a whiteboard or paper, not a computer. Test with some sample input
         - [ ] [Using Hash Tables (video)](https://archive.org/details/0102WhatYouShouldKnow/06_03-usingHashTables.mp4)
         - [ ] [Supporting Hashing (video)](https://archive.org/details/0102WhatYouShouldKnow/06_04-supportingHashing.mp4)
         - [ ] [Language Support Hash Tables (video)](https://archive.org/details/0102WhatYouShouldKnow/06_05-languageSupportForHashTables.mp4)
-        - [ ] [Core Hash Tables (video)](https://www.coursera.org/learn/data-structures-optimizing-performance/lecture/m7UuP/core-hash-tables)
+        - [ ] [Core Hash Tables (video)](https://www.coursera.org/lecture/data-structures-optimizing-performance/core-hash-tables-m7UuP)
         - [ ] [Data Structures (video)](https://www.coursera.org/learn/data-structures/home/week/4)
-        - [ ] [Phone Book Problem (video)](https://www.coursera.org/learn/data-structures/lecture/NYZZP/phone-book-problem)
+        - [ ] [Phone Book Problem (video)](https://www.coursera.org/lecture/data-structures/phone-book-problem-NYZZP)
         - [ ] distributed hash tables:
-            - [Instant Uploads And Storage Optimization In Dropbox (video)](https://www.coursera.org/learn/data-structures/lecture/DvaIb/instant-uploads-and-storage-optimization-in-dropbox)
-            - [Distributed Hash Tables (video)](https://www.coursera.org/learn/data-structures/lecture/tvH8H/distributed-hash-tables)
+            - [Instant Uploads And Storage Optimization In Dropbox (video)](https://www.coursera.org/lecture/data-structures/instant-uploads-and-storage-optimization-in-dropbox-DvaIb)
+            - [Distributed Hash Tables (video)](https://www.coursera.org/lecture/data-structures/distributed-hash-tables-tvH8H)
 
     - [ ] implement with array using linear probing
         - hash(k, m) - m is size of hash table
@@ -655,8 +663,8 @@ Write code on a whiteboard or paper, not a computer. Test with some sample input
 ## Trees
 
 - ### Trees - Notes & Background
-    - [ ] [Series: Core Trees (video)](https://www.coursera.org/learn/data-structures-optimizing-performance/lecture/ovovP/core-trees)
-    - [ ] [Series: Trees (video)](https://www.coursera.org/learn/data-structures/lecture/95qda/trees)
+    - [ ] [Series: Core Trees (video)](https://www.coursera.org/lecture/data-structures-optimizing-performance/core-trees-ovovP)
+    - [ ] [Series: Trees (video)](https://www.coursera.org/lecture/data-structures/trees-95qda)
     - basic tree construction
     - traversal
     - manipulation algorithms
@@ -730,8 +738,7 @@ Write code on a whiteboard or paper, not a computer. Test with some sample input
         - [ ] sift_down - needed for extract_max
         - [ ] remove(i) - removes item at index x
         - [ ] heapify - create a heap from an array of elements, needed for heap_sort
-        - [ ] heap_sort() - take an unsorted array and turn it into a sorted array in-place using a max heap
-            - note: using a min heap instead would save operations, but double the space needed (cannot do in-place).
+        - [ ] heap_sort() - take an unsorted array and turn it into a sorted array in-place using a max heap or min heap
 
 ## Sorting
 
@@ -1216,7 +1223,7 @@ Graphs can be used to represent many problems in computer science, so this secti
             - rough overview of any key algorithm that drives the service
             - consider bottlenecks and determine solutions
     - Exercises:
-        - [Design a CDN network: old article](http://repository.cmu.edu/cgi/viewcontent.cgi?article=2112&context=compsci)
+        - [Design a CDN network: old article](https://kilthub.cmu.edu/articles/Globally_distributed_content_delivery/6605972)
         - [Design a random unique ID generation system](https://blog.twitter.com/2010/announcing-snowflake)
         - [Design an online multiplayer card game](http://www.indieflashblog.com/how-to-create-an-asynchronous-multiplayer-game.html)
         - [Design a key-value database](http://www.slideshare.net/dvirsky/introduction-to-redis)
@@ -1326,6 +1333,7 @@ Mock Interviews:
 - [Gainlo.co: Mock interviewers from big companies](http://www.gainlo.co/) - I used this and it helped me relax for the phone screen and on-site interview.
 - [Pramp: Mock interviews from/with peers](https://www.pramp.com/) - peer-to-peer model of practice interviews
 - [Refdash: Mock interviews and expedited interviews](https://refdash.com/) - also help candidates fast track by skipping multiple interviews with tech companies.
+- [interviewing.io: Practice mock interview with senior engineers](https://interviewing.io) - anonymous algorithmic/systems design interviews with senior engineers from FAANG anonymously. 
 
 
 ## Once you're closer to the interview
